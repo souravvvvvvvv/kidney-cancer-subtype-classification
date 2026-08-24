@@ -12,9 +12,10 @@ Gene data was taken and concatenated from three differenet kidney cancer dataset
 
 
 ## Files
-data_concat.py - merges TCGA-KIRC/KIRP/KICH cohorts into `data_kidney.csv` / `labels_kidney.csv`
-exploratory_analysis.py - visualise class distribution, gene expression distribution, per gene variance, correlation heatmap of top variance genes, boxplots between genes
 
+- `data_concat.py` — merges TCGA-KIRC/KIRP/KICH cohorts into `data_kidney.csv` / `labels_kidney.csv`
+- `exploratory_analysis.py` — visualises class distribution, gene expression distribution, per-gene variance, correlation heatmap of top-variance genes, and boxplots between genes
+- `pipeline.py` — feature selection (ANOVA F-test → Lasso / Elastic Net) and classifier comparison
 
 ## Data
 Download STAR-TPM gene expression data for TCGA-KIRC, TCGA-KIRP, and TCGA-KICH
@@ -23,10 +24,10 @@ in the project root before running `data_concat.py`.
 
 ## Quick Start
 
-git clone https://github.com/souravvvvvvvv/Gene.git
+```bash
+git clone https://github.com/souravvvvvvv/Gene.git
 cd Gene
 pip install -r requirements.txt
 python data_concat.py
 python pipeline.py
-
-
+```
