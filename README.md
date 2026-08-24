@@ -12,8 +12,8 @@ This project uses machine learning to classify kidney cancer subtypes (**KIRC**,
 
    ```bash
    pip install -r requirements.txt
+python data_concat.py
+python pipeline.py
    ```
 
-   ```bash
-   jupyter notebook
-   ```
+
